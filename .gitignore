@@ -1,1 +1,6 @@
 temp_texture/
+.next/
+out/
+node_modules/
+npm-debug.log*
+.DS_Store
