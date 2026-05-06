@@ -151,7 +151,62 @@ temp_texture/
 （暂无，后续推进中逐步补充）
 
 ### 3.3 操作步骤答疑
-（暂无，后续推进中逐步补充）
+
+#### 3.3.1 如何开启和关闭本地预览网站
+
+开启本地开发服务器：
+
+```bash
+npm run dev
+```
+
+看到类似下面的信息，说明网站已经启动：
+
+```text
+Local: http://localhost:3000
+```
+
+这时可以在浏览器打开：
+
+```text
+http://localhost:3000
+```
+
+关闭本地开发服务器：
+
+```text
+在运行 npm run dev 的终端里按 Ctrl + C
+```
+
+如果终端回到类似下面的普通命令提示符，说明已经关闭成功：
+
+```bash
+chenrui@chenruideMacBook-Pro cr_ai_compass %
+```
+
+这个提示符的意思是“终端现在空闲，可以输入新命令了”，不是报错。
+
+关闭成功后，`http://localhost:3000` 会打不开，这是正常现象。
+
+注意：
+
+```text
+如果按 Ctrl + C 后直接回到 chenrui@... cr_ai_compass %，就不用再输入 y。
+```
+
+只有当终端明确询问类似下面的问题时，才需要输入 `y`：
+
+```text
+Terminate batch job? (Y/N)
+```
+
+本项目当前在 macOS zsh 终端里一般不会出现这个问题。如果在普通命令提示符后输入 `y`，终端会把 `y` 当成一个命令，所以会出现：
+
+```text
+zsh: command not found: y
+```
+
+这不是项目错误，也不会影响网站或代码。
 
 ---
 
